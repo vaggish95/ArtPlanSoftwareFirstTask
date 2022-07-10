@@ -1,6 +1,6 @@
 
 public class reverser {
-    static int[] repeats = {1, 1000, 10_000, 100_000_0000};
+    static int[] repeats = {1000, 10_000, 100_000};
     static String word = "Синхрофазотрон";
 
     public static void main (String[] args) {
@@ -20,9 +20,9 @@ public class reverser {
             }
            long finishTime = System.currentTimeMillis();
            long time = finishTime - startTime;
-           System.out.println("Время работы метода на " + arr[z] + " повторений составляет " + time + " миллисекунд");
+            System.out.println("Количество повторений :" + arr[z] + "| Время работы: " + time + " миллисекунд.");
         }
-        System.out.println("Строка :" + word);
-        System.out.println("Развернутая строка " +String.valueOf(reversed_word));
+        System.out.println("Строка : " + word);
+        System.out.println("Развернутая строка: " +String.valueOf(reversed_word));
     }
 }
